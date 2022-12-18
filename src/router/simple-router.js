@@ -8,9 +8,7 @@ import Recoverpw from '../views/dashboard/auth/recoverpw'
 import SignIn from '../views/dashboard/auth/sign-in'
 import SignUp from '../views/dashboard/auth/sign-up'
 // errors
-import Error404 from '../views/dashboard/errors/error404'
-import Error500 from '../views/dashboard/errors/error500'
-import Maintenance from '../views/dashboard/errors/maintenance'
+ 
 
 const SimpleRouter = () => {
     return (
@@ -24,10 +22,7 @@ const SimpleRouter = () => {
                 <Route exact path="/auth/sign-in"      component={SignIn}/>
                 <Route exact path="/auth/sign-up"      component={SignUp}/>  
                 <Route exact path="/ath/sign-up"      component={SignUp}/>  
-                {/* error */}
-                <Route exact path="/errors/error404"   component={Error404}/>  
-                <Route exact path="/errors/error500"  component={Error500}/>
-                <Route exact path="/errors/maintenance" component={Maintenance}/>
+     
             </Switch>
                
             </>

@@ -2,7 +2,7 @@ import React from 'react'
 
 
 //router
-import { Switch,Route } from 'react-router'
+import { Switch,Route ,lazy,Su} from 'react-router'
 //layoutpages
 import Index from '../views/index'
 import Default from '../layouts/dashboard/default'

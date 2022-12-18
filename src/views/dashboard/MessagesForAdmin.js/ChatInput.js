@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BsEmojiSmileFill } from "react-icons/bs";
 import { IoMdSend } from "react-icons/io";
 import styled from "styled-components";
-import Picker from "emoji-picker-react";
+
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -12,9 +12,9 @@ export default function ChatInput({ handleSendMsg }) {
   const [file, setfile] = useState("");
 console.log(msg)
 console.log(file)
-  const [showEmojiPicker, setShowEmojiPicker] = useState(false);
+  
   const handleEmojiPickerhideShow = () => {
-    setShowEmojiPicker(!showEmojiPicker);
+    
   };
 
   const handleEmojiClick = (event, emojiObject) => {

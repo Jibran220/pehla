@@ -1,68 +1,60 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,Suspense,lazy} from 'react'
 import Index from '../views/dashboard/index'
+import {TransitionGroup,CSSTransition} from "react-transition-group"
+
 import {Switch,Route,useHistory} from 'react-router-dom'
 // user
-import UserProfile from '../views/dashboard/app/user-profile';
-import UserProfile2 from '../views/dashboard/app/UserProfile2';
-import UserProfile3 from '../views/dashboard/app/UserProfile3';
-import UserProfile4 from '../views/dashboard/app/UserProfile4';
-import VendorProfile from '../views/dashboard/app/VendorProfile';
-import Profile_Picture from '../views/dashboard/app/Profile_Picture';
-import Appjs from '../views/dashboard/app/App';
-import VendorQoute from '../views/dashboard/app/VendorQoute';
-import UserAdd from '../views/dashboard/app/user-add';
-import UserList from '../views/dashboard/app/user-list';
-import Rfqmanges from '../views/dashboard/indexRFQ';
-import Userrfq from '../views/dashboard/app/Userrfq';
-import MASproduct_Category from '../views/dashboard/app/MASproduct Category';
-import MASproduct_Category_Update from '../views/dashboard/app/MASproduct_Category_Update';
-import MASApplicableStandards from '../views/dashboard/app/MASApplicableStandards';
-import MASApplicableStandards_Update from '../views/dashboard/app/MASApplicableStandards_Update';
-import MASW_x_D_x_H from '../views/dashboard/app/MASW x D x H';
-import MASW_x_D_x_H_Update from '../views/dashboard/app/MASW x D x H_Update';
-import userProfileEdit from '../views/dashboard/app/user-privacy-setting';
+const UserProfile =lazy(()=>import( '../views/dashboard/app/user-profile'))
+const UserProfile2 =lazy(()=>import( '../views/dashboard/app/UserProfile2'))
+const UserProfile3 =lazy(()=>import( '../views/dashboard/app/UserProfile3'))
+const UserProfile4 =lazy(()=>import( '../views/dashboard/app/UserProfile4'))
+const VendorProfile =lazy(()=>import( '../views/dashboard/app/VendorProfile'))
+const Profile_Picture =lazy(()=>import( '../views/dashboard/app/Profile_Picture'))
+const Appjs =lazy(()=>import( '../views/dashboard/app/App'))
+const VendorQoute =lazy(()=>import( '../views/dashboard/app/VendorQoute'))
+const UserAdd =lazy(()=>import( '../views/dashboard/app/user-add'))
+const UserList =lazy(()=>import( '../views/dashboard/app/user-list'))
+const Rfqmanges =lazy(()=>import( '../views/dashboard/indexRFQ'))
+const Userrfq =lazy(()=>import( '../views/dashboard/app/Userrfq'))
+const MASproduct_Category =lazy(()=>import( '../views/dashboard/app/MASproduct Category'))
+const MASproduct_Category_Update =lazy(()=>import( '../views/dashboard/app/MASproduct_Category_Update'))
+const MASApplicableStandards =lazy(()=>import( '../views/dashboard/app/MASApplicableStandards'))
+const MASApplicableStandards_Update =lazy(()=>import( '../views/dashboard/app/MASApplicableStandards_Update'))
+const MASW_x_D_x_H =lazy(()=>import( '../views/dashboard/app/MASW x D x H'))
+const MASW_x_D_x_H_Update =lazy(()=>import( '../views/dashboard/app/MASW x D x H_Update'))
+const userProfileEdit =lazy(()=>import( '../views/dashboard/app/user-privacy-setting'))
 // widget
-import Widgetbasic from '../views/dashboard/widget/widgetbasic';
-import Widgetcard from '../views/dashboard/widget/widgetcard';
-import Widgetchart from '../views/dashboard/widget/widgetchart';
-// icon
-import Solid from '../views/dashboard/icons/solid';
-import Outline from '../views/dashboard/icons/outline';
-import DualTone from '../views/dashboard/icons/dual-tone';
+ 
+ 
 // Form
-import FormElement from '../views/dashboard/from/form-element';
-import FormValidation from '../views/dashboard/from/form-validation';
-import FormWizard from '../views/dashboard/from/form-wizard';
-import Rfqform from '../views/dashboard/from/Rfqform';
-import Userrfqf from '../views/dashboard/from/Userrfq';
+const FormElement =lazy(()=>import( '../views/dashboard/from/form-element'))
+const FormValidation =lazy(()=>import( '../views/dashboard/from/form-validation'))
+const FormWizard =lazy(()=>import( '../views/dashboard/from/form-wizard'))
+const Rfqform =lazy(()=>import( '../views/dashboard/from/Rfqform'))
+const Userrfqf =lazy(()=>import( '../views/dashboard/from/Userrfq'))
 // table
-import BootstrapTable from '../views/dashboard/table/bootstrap-table';
-import TableData from '../views/dashboard/table/table-data';
+ 
 
-// map
-import Vector from '../views/dashboard/maps/vector';
-import Google from '../views/dashboard/maps/google';
-
-//extra
-import PrivacyPolicy from '../views/dashboard/extra/privacy-policy';
-import TermsofService from '../views/dashboard/extra/terms-of-service';
+ 
+ 
 
 //TransitionGroup
-import {TransitionGroup,CSSTransition} from "react-transition-group";
 //Special Pages
-// import Billing from '../views/dashboard/special-pages/billing';
-import Kanban from '../views/dashboard/special-pages/kanban';
-import Pricing from '../views/dashboard/special-pages/pricing';
-import Timeline from '../views/dashboard/special-pages/timeline';
-import Calender from '../views/dashboard/special-pages/calender';
-import QuoteTable from '../views/dashboard/app/QuoteTable';
-import Invoice from '../views/dashboard/app/Invoice';
-import App from '../views/dashboard/app/App';
-import Post from '../components/Posts/Post';
+// const Billing =lazy(()=>import( '../views/dashboard/special-pages/billing'))
+ 
+const QuoteTable =lazy(()=>import( '../views/dashboard/app/QuoteTable'))
+const Invoice =lazy(()=>import( '../views/dashboard/app/Invoice'))
+const App =lazy(()=>import( '../views/dashboard/app/App'))
+const Post =lazy(()=>import( '../components/Posts/Post'))
 //admin
-import Admin from '../views/dashboard/admin/admin';
+ 
 
-import POTable from '../views/dashboard/app/POTable';
+const POTable =lazy(()=>import( '../views/dashboard/app/POTable'))
+
+
+
+const Admin=lazy(()=>import("../views/dashboard/admin/admin"))
+
 const DefaultRouter = () => {
     const history=useHistory()
    
@@ -70,6 +62,7 @@ const DefaultRouter = () => {
     return (
         <TransitionGroup>
             <CSSTransition classNames="fadein" timeout={500}>
+            <Suspense fallback={<h1>Loading.....</h1>}>
                 <Switch>
 
                     <Route path="/" exact component={Index} />
@@ -97,13 +90,9 @@ const DefaultRouter = () => {
                     <Route path="/dashboard/app/MASW_x_D_x_H_Update/:id"        exact component={MASW_x_D_x_H_Update}/>     
                     <Route path="/dashboard/app/user-privacy-setting" exact component={userProfileEdit}/>
                      {/* widget */}
-                     <Route path="/dashboard/widget/widgetbasic"   exact component={Widgetbasic}/>
-                     <Route path="/dashboard/widget/widgetcard"    exact component={Widgetcard}/>
-                     <Route path="/dashboard/widget/widgetchart"   exact component={Widgetchart}/>
+                    
                      {/* icon */}
-                     <Route path="/dashboard/icon/solid"           exact component={Solid}/>
-                     <Route path="/dashboard/icon/outline"         exact component={Outline}/>
-                     <Route path="/dashboard/icon/dual-tone"       exact component={DualTone}/>
+     
                      {/* From */}
                      <Route path="/dashboard/form/form-element"    exact component={FormElement}/>
                      <Route path="/dashboard/form/form-validation" exact component={FormValidation}/>
@@ -112,23 +101,15 @@ const DefaultRouter = () => {
                      <Route path="/dashboard/form/Userrfq/:id"     exact component={Userrfqf}/>
                      {/* <Route path="/dashboard/app/POTable/:id"     exact component={POTable} /> */}
                      {/* table */}
-                     <Route path="/dashboard/table/bootstrap-table" exact component={BootstrapTable}/>
-                     <Route path="/dashboard/table/table-data"      exact component={TableData}/>
-                     {/*special pages */}
+ 
                      {/* <Route path="/dashboard/special-pages/billing/:id" exact component={App}/> */}
-                     <Route path="/dashboard/special-pages/kanban" exact component={Kanban}/>
-                     <Route path="/dashboard/special-pages/pricing" exact component={Pricing}/>
-                     <Route path="/dashboard/special-pages/timeline" exact component={Timeline}/>
-                     <Route path="/dashboard/special-pages/calender" exact component={Calender}/>
-                     {/* map */}
-                     <Route path="/dashboard/map/vector" exact component={Vector}/>
-                     <Route path="/dashboard/map/google" exact component={Google}/>
+ 
                      {/* extra */}
-                     <Route path="/dashboard/extra/privacy-policy" exact component={PrivacyPolicy}/>
-                     <Route path="/dashboard/extra/terms-of-service" exact component={TermsofService}/>
+   
                      {/*admin*/}
                      <Route path="/dashboard/admin/admin" exact component={Admin}/>
                 </Switch>
+                </Suspense>
             </CSSTransition>
         </TransitionGroup>
     )

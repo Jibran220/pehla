@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import img from './upload-image.jpg'
-import Avatar from 'react-avatar-edit'
+ 
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
 import { InputText } from 'primereact/inputtext';
