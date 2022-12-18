@@ -1,18 +1,20 @@
-import React from 'react'
+import React,{lazy,Suspense} from 'react'
 import {Switch,Route} from 'react-router-dom'
 
 // auth
-import ConfirmMail from '../views/dashboard/auth/confirm-mail'
-import LockScreen from '../views/dashboard/auth/lock-screen'
-import Recoverpw from '../views/dashboard/auth/recoverpw'
-import SignIn from '../views/dashboard/auth/sign-in'
-import SignUp from '../views/dashboard/auth/sign-up'
+const ConfirmMail =lazy(()=>import(  '../views/dashboard/auth/confirm-mail'))
+const LockScreen =lazy(()=>import(  '../views/dashboard/auth/lock-screen'))
+const Recoverpw =lazy(()=>import(  '../views/dashboard/auth/recoverpw'))
+const SignIn =lazy(()=>import(  '../views/dashboard/auth/sign-in'))
+const SignUp =lazy(()=>import(  '../views/dashboard/auth/sign-up'))
 // errors
  
 
 const SimpleRouter = () => {
     return (
             <>
+            <Suspense fallback={<h1>Loading.....</h1>}>
+
             <Switch>
 
                 {/* auth */}
@@ -24,6 +26,7 @@ const SimpleRouter = () => {
                 <Route exact path="/ath/sign-up"      component={SignUp}/>  
      
             </Switch>
+            </Suspense>
                
             </>
     )

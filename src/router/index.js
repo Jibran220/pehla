@@ -1,34 +1,39 @@
-import React from 'react'
+import React,{ lazy,Suspense} from 'react'
 
 
 //router
-import { Switch,Route ,lazy,Su} from 'react-router'
+import { Switch,Route} from 'react-router'
 //layoutpages
-import Index from '../views/index'
-import Default from '../layouts/dashboard/default'
-import Horizontal from '../layouts/dashboard/horizontal'
-import Boxed from '../layouts/dashboard/boxed'
-import DualHorizontal from '../layouts/dashboard/dual-horizontal'
-import DualCompact from '../layouts/dashboard/dual-compact'
-import BoxedFancy from "../layouts/dashboard/boxed-fancy"
-import Simple from '../layouts/dashboard/simple'
-import Vendor from '../layouts/dashboard/Vendor'
-import Athvend from '../layouts/dashboard/Athvend'
-import Layout from '../layouts/dashboard/layout-rfq'
-import VendorQuoteLIst from '../layouts/dashboard/VendorQuoteLIst'
-import VendorQuote from '../layouts/dashboard/VendorQuote'
-import Approver from '../layouts/dashboard/Approver'
-import ApproverAhead from '../layouts/dashboard/ApproverAhead'
-import Admin_Vendor_List from '../layouts/dashboard/Admin_Vendor_List'
-import Admin_Vendor_Profile from '../layouts/dashboard/Admin_Vendor_Profile'
-import Admin_po_list from '../layouts/dashboard/Admin_po_list'
-import Admin_Generate_po from '../layouts/dashboard/Admin_Generate_po'
-import Admin_Quote from '../layouts/dashboard/Admin_Quote'
-import User_Add from '../layouts/dashboard/User_Add'
+
+ 
+//layoutpages
+const Index =lazy(()=>import(  '../views/index'))
+const Default =lazy(()=>import(  '../layouts/dashboard/default'))
+const Horizontal =lazy(()=>import(  '../layouts/dashboard/horizontal'))
+const Boxed =lazy(()=>import(  '../layouts/dashboard/boxed'))
+const DualHorizontal =lazy(()=>import(  '../layouts/dashboard/dual-horizontal'))
+const DualCompact =lazy(()=>import(  '../layouts/dashboard/dual-compact'))
+const BoxedFancy =lazy(()=>import(  "../layouts/dashboard/boxed-fancy"))
+const Simple =lazy(()=>import(  '../layouts/dashboard/simple'))
+const Vendor =lazy(()=>import(  '../layouts/dashboard/Vendor'))
+const Athvend =lazy(()=>import(  '../layouts/dashboard/Athvend'))
+const Layout =lazy(()=>import(  '../layouts/dashboard/layout-rfq'))
+const VendorQuoteLIst =lazy(()=>import(  '../layouts/dashboard/VendorQuoteLIst'))
+const VendorQuote =lazy(()=>import(  '../layouts/dashboard/VendorQuote'))
+const Approver =lazy(()=>import(  '../layouts/dashboard/Approver'))
+const ApproverAhead =lazy(()=>import(  '../layouts/dashboard/ApproverAhead'))
+const Admin_Vendor_List =lazy(()=>import(  '../layouts/dashboard/Admin_Vendor_List'))
+const Admin_Vendor_Profile =lazy(()=>import(  '../layouts/dashboard/Admin_Vendor_Profile'))
+const Admin_po_list =lazy(()=>import(  '../layouts/dashboard/Admin_po_list'))
+const Admin_Generate_po =lazy(()=>import(  '../layouts/dashboard/Admin_Generate_po'))
+const Admin_Quote =lazy(()=>import(  '../layouts/dashboard/Admin_Quote'))
+const User_Add =lazy(()=>import(  '../layouts/dashboard/User_Add'))
 
 const IndexRouters = () => {
     return (
         <>
+            <Suspense fallback={<h1>Loading.....</h1>}>
+
             <Switch>
             <Route exact path="/" component={Default}></Route>
                 <Route exact path="/ath" component={Vendor}></Route>
@@ -57,6 +62,7 @@ const IndexRouters = () => {
                 <Route  path="/auth" component={Simple}></Route>
                 <Route  path="/errors" component={Simple}></Route>
             </Switch>
+            </Suspense>
         </>
     )
 }
