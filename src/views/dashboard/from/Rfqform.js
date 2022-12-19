@@ -1,3 +1,4 @@
+// https://stackoverflow.com/questions/62663451/treating-warnings-as-errors-because-process-env-ci-true-failed-to-compile
  import Card from '../../../components/Card'
 import imgsuccess from '../../../assets/images/pages/img-success.png'
 import { Row, Col, Form, Image, Nav, Tab, FormCheck, Button, Accordion } from "react-bootstrap";
