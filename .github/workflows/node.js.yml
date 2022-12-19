@@ -23,7 +23,7 @@ jobs:
         cache: 'npm'
     - run: npm i --force
      
-    
-    - run: CI=false npm run build
+       $env:CI="false"
+    - run:  npm run build
   
      
