@@ -68,7 +68,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "CI":"False", 
-    "build": "set NODE_OPTIONS=--max-old-space-size=16192 && react-scripts build",
+    "build": "set \"CI=false\" && react-scripts build
     
     "test": "CI=true react-scripts test"
     "eject": "react-scripts eject"
