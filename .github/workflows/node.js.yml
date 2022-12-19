@@ -23,6 +23,7 @@ jobs:
         cache: 'npm'
     - run: npm i --force
      
-    - run: npm run build
+    
+    - run: CI=false yarn run build
   
      
