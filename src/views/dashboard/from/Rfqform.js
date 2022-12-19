@@ -35,8 +35,8 @@ const FormWizard = () => {
     
         //_CLASSIFICATION	
         Stationary: " ",
-        Fixed: " ",
-        Portable: " ",
+        Fixed: " ",// 
+        Portable: " ", 
         Body_worn: " ",
         Mobile: " ",
         Hand_held: " ",
@@ -46,26 +46,48 @@ const FormWizard = () => {
         USB_Powered: " ",
     
         //_SERVICES_REQUESTED	
-        ETL_Listing_for_North_America: " ",
-        ETL_Classification_for_North_America: " ",
-        ETL_Recognition_for_North_America: " ",
-        FDA_ASCA_Pilot_Program: " ",
-        EU_Test_Reports: " ",
-        IEC_Test_Reports: " ",
-        CB_Scheme_Evaluation: " ",
-        Limited_Production_Certification: " ",
-        Field_Label_Evaluation: " ",
-        Design_Review: " ",
-        EMC_Testing: " ",
-        Test_Data_Only: " ",
-        ROHS_Evaluation: " ",
-        Performance_Testing: " ",
-        Intertek_Assurance_and_Consulting: " ",
-        Other: " ",
-        Testing_at_Manufacturers_Premises: " ",
-        Witness_Manufacturers_Testing: " ",
-        Intertek_Data_Acceptance_Program_SATELLITE: " ",
-    
+        ETL_Listing_for_North_America_yes: " ",                      
+        ETL_Classification_for_North_America_yes: " ",                      
+        ETL_Recognition_for_North_America_yes: " ",                      
+        FDA_ASCA_Pilot_Program_yes: " ",                      
+        EU_Test_Reports_yes: " ",                      
+        IEC_Test_Reports_yes: " ",                      
+        CB_Scheme_Evaluation_yes: " ",                      
+        Limited_Production_Certification_yes: " ",                      
+        Field_Label_Evaluation_yes: " ",                      
+        Design_Review_yes: " ",                      
+        EMC_Testing_yes: " ",                      
+        Test_Data_Only_yes: " ",                      
+        ROHS_Evaluation_yes: " ",                      
+        Performance_Testing_yes: " ",                      
+        Intertek_Assurance_and_Consulting_yes: " ",                      
+        Other_yes: " ",
+        Testing_at_Manufacturers_Premises_yes: " ",
+        Witness_Manufacturers_Testing_yes: " ",
+        Intertek_Data_Acceptance_Program_SATELLITE_yes: " ",
+
+        // NO
+        ETL_Listing_for_North_America_no: " ",
+        ETL_Classification_for_North_America_no: " ",
+        ETL_Recognition_for_North_America_no: " ",
+        FDA_ASCA_Pilot_Program_no: " ",
+        EU_Test_Reports_no: " ",
+        IEC_Test_Reports_no: " ",
+        CB_Scheme_Evaluation_no: " ",
+        Limited_Production_Certification_no: " ",
+        Field_Label_Evaluation_no: " ",
+        Design_Review_no: " ",
+        EMC_Testing_no: " ",
+        Test_Data_Only_no: " ",
+        ROHS_Evaluation_no: " ",
+        Performance_Testing_no: " ",
+        Intertek_Assurance_and_Consulting_no: " ",
+        Other_no: " ",
+        Testing_at_Manufacturers_Premises_no: " ",
+        Witness_Manufacturers_Testing_no: " ",
+        Intertek_Data_Acceptance_Program_SATELLITE_no: " ",  
+        
+        Description_of_revision_1:" ",
         //REPORT_REVISION	
         Report_Numbers_to_be_Revised: " ",
         CDR_Listing_Report: " ",
@@ -74,22 +96,39 @@ const FormWizard = () => {
         Description_of_revision: " ",
     
         //_INTENDED_MARKET_COUNTRIES	
-        Australia: " ",
-        Brazil: " ",
-        Canada: " ",
-        China: " ",
-        Denmark: " ",
-        European_Union: " ",
-        Israel: " ",
-        Japan: " ",
-        Korea: " ",
-        Mexico: " ",
-        Saudi_Arabia: " ",
-        Singapore: " ",
-        Switzerland: " ",
-        United_Kingdom: " ",
-        United_States: " ",
-        Other: " ",
+        Australia_yes: " ",
+        Brazil_yes: " ",
+        Canada_yes: " ",
+        China_yes: " ",
+        Denmark_yes: " ",
+        European_Union_yes: " ",
+        Israel_yes: " ",
+        Japan_yes: " ",
+        Korea_yes: " ",
+        Mexico_yes: " ",
+        Saudi_Arabia_yes: " ",
+        Singapore_yes: " ",
+        Switzerland_yes: " ",
+        United_Kingdom_yes: " ",
+        United_States_yes: " ",
+        Other_INTENDED_MARKET_COUNTRIES_yes: " ",
+
+        Australia_no: " ",
+        Brazil_no: " ",
+        Canada_no: " ",
+        China_no: " ",
+        Denmark_no: " ",
+        European_Union_no: " ",
+        Israel_no: " ",
+        Japan_no: " ",
+        Korea_no: " ",
+        Mexico_no: " ",
+        Saudi_Arabia_no: " ",
+        Singapore_no: " ",
+        Switzerland_no: " ",
+        United_Kingdom_no: " ",
+        United_States_no: " ",
+        Other_INTENDED_MARKET_COUNTRIES_no: " ",
     
         //_SPECIAL_REQUIRMENTS_FOR_FUNCTIONALITLY/TESTING_OF_THE_PRODUCT	
         SPECIAL_REQUIRMENTS_FOR_FUNCTIONALITLY_TESTING_OF_THE_PRODUCT: " ",
@@ -97,26 +136,48 @@ const FormWizard = () => {
         //_REQUESTED_STANDARDS_FOR_EVALUATION		
         REQUESTED_STANDARDS_FOR_EVALUATION: " ",
         //_STANDARDS_QUESTIONS								
-        Would_you_like_your_product_evaluated_to_the_first_amendment_of_60601_Third_Edition: " ",
-        Does_your_product_incorporate_the_use_of_software: " ",
-        Do_you_have_a_risk_management_file_for_your_product_that_is_compliant_with_the_requirements_of_ISO_14971: " ",
-        Intertek_currently_does_not_offer_an_evaluation_of_EN_ISO_14971: " ", _2012: " ", _which_requires_a_review_of_all_items_in_the_Risk_Management_File_against_the_differences_between_the_requirements_of_the_Medical_Device_Directive_and_ISO_14971: " ", _as_required_for_CE_marking_to_the_Medical_Device_Directive: " ", _which_is_not_a_certification_provided_by_Intertek: " ",
+        Would_you_like_your_product_evaluated_to_the_first_amendment_of_60601_Third_Edition_yes: " ",
+        Does_your_product_incorporate_the_use_of_software_yes: " ",
+        Do_you_have_a_risk_management_file_for_your_product_that_is_compliant_with_the_requirements_of_ISO_14971_yes: " ",
+        Intertek_currently_does_not_offer_an_evaluation_of_EN_ISO_14971_yes: " ", _2012_yes: " ", _which_requires_a_review_of_all_items_in_the_Risk_Management_File_against_the_differences_between_the_requirements_of_the_Medical_Device_Directive_and_ISO_14971: " ", _as_required_for_CE_marking_to_the_Medical_Device_Directive_yes: " ", _which_is_not_a_certification_provided_by_Intertek_yes: " ",
         Has_your_ISO_14971_Risk_Management_Process_been_reviewed_by_Intertek: " ",
-        If_Yes_to_above_question: " ", _please_provide_Intertek_Project_Number_the_review_was_completed_under: " ",
-        Usability_File___Would_you_like_Intertek_to_evaluate_your_Usability_Engineering_File_against_IEC_62366: " ", _2015: " ",
-        If_yes_to_a_usability_file_review_which_standard_would_you_like_Intertek_to_use: " ",
-        Does_your_product_have_alarms_incorporated_into_the_medical_device_606018: " ",
-        If_Yes_for_alarms_what_type_of_alarms_are_provided: " ",
-        Will_your_product_be_used_in_a_home_health_care_environment_606011: " ",
-        Does_your_product_incorporate_the_use_of_a_laser_60825: " ",
-        Does_your_product_incorporate_the_use_of_X_Ray: " ",
-        Does_your_product_use_batteries: " ",
-        If_yes_what_kind_of_battery_is_used: " ",
-        Does_your_product_incorporate_the_use_of_LEDs_as_luminaires_lamp_IEC_62471: " ",
-        Does_your_product_have_wireless_communication_capabilities: " ",
-        Will_your_product_be_used_in_a_emergency_medical_services_environment_606012: " ",
-        Is_the_product_rated_IP_rated_for_protection_against_solid_foreign_objects: " ",
-        Is_the_product_rated_IP_rated_for_protection_against_water: " ",
+        If_Yes_to_above_question_please_provide_Intertek_Project_Number_the_review_was_completed_under_yes: " ",
+        Usability_File___Would_you_like_Intertek_to_evaluate_your_Usability_Engineering_File_against_IEC_62366_yes: " ", _2015_yes: " ",
+        If_yes_to_a_usability_file_review_which_standard_would_you_like_Intertek_to_use_yes: " ",
+        Does_your_product_have_alarms_incorporated_into_the_medical_device_606018_yes: " ",
+        If_Yes_for_alarms_what_type_of_alarms_are_provided_yes: " ",
+        Will_your_product_be_used_in_a_home_health_care_environment_606011_yes: " ",
+        Does_your_product_incorporate_the_use_of_a_laser_60825_yes: " ",
+        Does_your_product_incorporate_the_use_of_X_Ray_yes: " ",
+        Does_your_product_use_batteries_yes: " ",
+        If_yes_what_kind_of_battery_is_used_yes: " ",
+        Does_your_product_incorporate_the_use_of_LEDs_as_luminaires_lamp_IEC_62471_yes: " ",
+        Does_your_product_have_wireless_communication_capabilities_yes: " ",
+        Will_your_product_be_used_in_a_emergency_medical_services_environment_606012_yes: " ",
+        Is_the_product_rated_IP_rated_for_protection_against_solid_foreign_objects_yes: " ",
+        Is_the_product_rated_IP_rated_for_protection_against_water_yes: " ",
+
+
+        Would_you_like_your_product_evaluated_to_the_first_amendment_of_60601_Third_Edition_no: " ",
+        Does_your_product_incorporate_the_use_of_software_no: " ",
+        Do_you_have_a_risk_management_file_for_your_product_that_is_compliant_with_the_requirements_of_ISO_14971_no: " ",
+        Intertek_currently_does_not_offer_an_evaluation_of_EN_ISO_14971_no: " ", _2012_no: " ", _which_requires_a_review_of_all_items_in_the_Risk_Management_File_against_the_differences_between_the_requirements_of_the_Medical_Device_Directive_and_ISO_14971: " ", _as_required_for_CE_marking_to_the_Medical_Device_Directive_no: " ", _which_is_not_a_certification_provided_by_Intertek_no: " ",
+        Has_your_ISO_14971_Risk_Management_Process_been_reviewed_by_Intertek: " ",
+        If_no_to_above_question_please_provide_Intertek_Project_Number_the_review_was_completed_under_no: " ",
+        Usability_File___Would_you_like_Intertek_to_evaluate_your_Usability_Engineering_File_against_IEC_62366_no: " ", _2015_no: " ",
+        If_no_to_a_usability_file_review_which_standard_would_you_like_Intertek_to_use_no: " ",
+        Does_your_product_have_alarms_incorporated_into_the_medical_device_606018_no: " ",
+        If_no_for_alarms_what_type_of_alarms_are_provided_no: " ",
+        Will_your_product_be_used_in_a_home_health_care_environment_606011_no: " ",
+        Does_your_product_incorporate_the_use_of_a_laser_60825_no: " ",
+        Does_your_product_incorporate_the_use_of_X_Ray_no: " ",
+        Does_your_product_use_batteries_no: " ",
+        If_no_what_kind_of_battery_is_used_no: " ",
+        Does_your_product_incorporate_the_use_of_LEDs_as_luminaires_lamp_IEC_62471_no: " ",
+        Does_your_product_have_wireless_communication_capabilities_no: " ",
+        Will_your_product_be_used_in_a_emergency_medical_services_environment_606012_no: " ",
+        Is_the_product_rated_IP_rated_for_protection_against_solid_foreign_objects_no: " ",
+        Is_the_product_rated_IP_rated_for_protection_against_water_no: " ",
     
         // 2.js
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -657,7 +718,7 @@ const FormWizard = () => {
     const handleSubmit = async () => {
         const result = fetch("http://localhost:5005/rfqmanagers", {
             method: "post",
-            body: JSON.stringify(postData),
+            body: JSON.stringify(postData1),
             headers: { "Content-Type": "application/json" },
         });
         // result = await result.json();
@@ -682,6 +743,24 @@ const FormWizard = () => {
         if (showf === false && showf1 === false && showf2 === false && showf3 === false && showf4 === false && showf5 === false && showf6 === false && showf7 === false && showf8 === false) {
             const button = document.querySelector('#bttn')
             button.disabled = true
+
+        }
+        else{
+
+
+
+            const result = fetch("http://54.37.6.229:5005/rfqmanagers", {
+                method: "post",
+                body: JSON.stringify(postData1),
+                headers: { "Content-Type": "application/json" },
+            });
+            // result = await result.json();
+            if (result) {
+                alert("added Succesfully!");
+    
+                navigate.push('/')
+            }
+    
 
         }
 
@@ -1007,11 +1086,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.voltage_1}
+                                                                            value={postData.Voltage_1}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Current_Power_1: e.target.value,
+                                                                                    Voltage_1: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1036,24 +1115,7 @@ const FormWizard = () => {
                                                                         />
                                                                     </div>
                                                                 </div>
-                                                                <div className="col-md-3">
-                                                                    <div className="form-group">
-                                                                        <label className="form-label">
-                                                                            City, State Zip: *
-                                                                        </label>
-                                                                        <input
-                                                                            type="text"
-                                                                            className="form-control"
-                                                                            value={postData.Regulatory_Family}
-                                                                            onChange={(e) =>
-                                                                                setPostData({
-                                                                                    ...postData,
-                                                                                    Regulatory_Family: e.target.value,
-                                                                                })
-                                                                            }
-                                                                        />
-                                                                    </div>
-                                                                </div>
+                                                                
                                                                 <div className="col-md-3">
                                                                     <div className="form-group">
                                                                         <label className="form-label">
@@ -1062,7 +1124,15 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
+                                                                            value={postData.Current_Power_1}
+                                                                            onChange={(e) =>
+                                                                                setPostData({
+                                                                                    ...postData,
+                                                                                    Current_Power_1: e.target.value,
+                                                                                })
+                                                                            }
                                                                         />
+                                                                   
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-md-3">
@@ -1073,11 +1143,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.Other_1}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    Other_1: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1111,11 +1181,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Regulatory_Model_Name}
+                                                                            value={postData.Stationary}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Regulatory_Model_Name: e.target.value,
+                                                                                    Stationary: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1130,11 +1200,11 @@ const FormWizard = () => {
                                                                             type="text"
                                                                             name="Product_Name"
                                                                             className="form-control"
-                                                                            value={postData.Product_Name}
+                                                                            value={postData.Portable}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Name: e.target.value,
+                                                                                    Portable: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1148,11 +1218,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Regulatory_Family}
+                                                                            value={postData.Mobile}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Regulatory_Family: e.target.value,
+                                                                                    Mobile: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1166,22 +1236,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                        />
-                                                                    </div>
-                                                                </div>
-                                                                <div className="col-md-3">
-                                                                    <div className="form-group">
-                                                                        <label className="form-label">
-                                                                            Fixed:
-                                                                        </label>
-                                                                        <input
-                                                                            type="text"
-                                                                            className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.Class_I}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    Class_I: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1195,16 +1254,17 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.Fixed}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    Fixed: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
                                                                     </div>
                                                                 </div>
+                                                        
                                                                 <div className="col-md-3">
                                                                     <div className="form-group">
                                                                         <label className="form-label">
@@ -1213,11 +1273,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.Body_worn}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    Body_worn: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1231,34 +1291,17 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.Hand_held}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    Hand_held: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
                                                                     </div>
                                                                 </div>
-                                                                <div className="col-md-3">
-                                                                    <div className="form-group">
-                                                                        <label className="form-label">
-                                                                            Body-worn:
-                                                                        </label>
-                                                                        <input
-                                                                            type="text"
-                                                                            className="form-control"
-                                                                            value={postData.Product_Description}
-                                                                            onChange={(e) =>
-                                                                                setPostData({
-                                                                                    ...postData,
-                                                                                    Product_Description: e.target.value,
-                                                                                })
-                                                                            }
-                                                                        />
-                                                                    </div>
-                                                                </div>
+                                                         
                                                                 <div className="col-md-3">
                                                                     <div className="form-group">
                                                                         <label className="form-label">
@@ -1267,11 +1310,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.Class_II}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    Class_II: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1286,11 +1329,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.Internally_}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    Internally_: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1304,11 +1347,11 @@ const FormWizard = () => {
                                                                         <input
                                                                             type="text"
                                                                             className="form-control"
-                                                                            value={postData.Product_Description}
+                                                                            value={postData.USB_Powered}
                                                                             onChange={(e) =>
                                                                                 setPostData({
                                                                                     ...postData,
-                                                                                    Product_Description: e.target.value,
+                                                                                    USB_Powered: e.target.value,
                                                                                 })
                                                                             }
                                                                         />
@@ -1337,11 +1380,11 @@ const FormWizard = () => {
                                                                     <div className="form-group">
 
 
-                                                                        <Form.Label> </Form.Label>
+                                                                        <Form.Label>ETL Listing for North America</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="ETL_Listing_for_North_America_yes">Yes</option>
+                                                                            <option value="ETL_Listing_for_North_America_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1356,8 +1399,8 @@ const FormWizard = () => {
                                                                         <Form.Label> ETL Classification for North America:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="ETL_Classification_for_North_America_yes">Yes</option>
+                                                                            <option value="ETL_Classification_for_North_America_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1371,8 +1414,8 @@ const FormWizard = () => {
                                                                         <Form.Label>ETL Recognition for North America:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="ETL_Recognition_for_North_America_yes">Yes</option>
+                                                                            <option value="ETL_Recognition_for_North_America_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1387,8 +1430,8 @@ const FormWizard = () => {
                                                                         <Form.Label>FDA ASCA Pilot Program: </Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="FDA_ASCA_Pilot_Program_yes">Yes</option>
+                                                                            <option value="FDA_ASCA_Pilot_Program_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1401,8 +1444,8 @@ const FormWizard = () => {
                                                                         <Form.Label>EU Test Reports:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="EU_Test_Reports_yes">Yes</option>
+                                                                            <option value="EU_Test_Reports_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1415,8 +1458,8 @@ const FormWizard = () => {
                                                                         <Form.Label>IEC Test Reports:					:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="IEC_Test_Reports_yes">Yes</option>
+                                                                            <option value="IEC_Test_Reports_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1429,8 +1472,8 @@ const FormWizard = () => {
                                                                         <Form.Label>CB Scheme Evaluation:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="CB_Scheme_Evaluation_yes">Yes</option>
+                                                                            <option value="CB_Scheme_Evaluation_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1442,8 +1485,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Limited Production Certification::</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Limited_Production_Certification_yes">Yes</option>
+                                                                            <option value="Limited_Production_Certification_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1456,8 +1499,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Field Label Evaluation::</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Field_Label_Evaluation_yes">Yes</option>
+                                                                            <option value="Field_Label_Evaluation_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1469,8 +1512,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Design Review:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Design_Review_yes">Yes</option>
+                                                                            <option value="Design_Review_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1487,8 +1530,8 @@ const FormWizard = () => {
                                                                         <Form.Label>EMC Testing</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="EMC_Testing_yes">Yes</option>
+                                                                            <option value="EMC_Testing_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1499,8 +1542,8 @@ const FormWizard = () => {
                                                                         <Form.Label> Test Data Only:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Test_Data_Only_yes">Yes</option>
+                                                                            <option value="Test_Data_Only_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1511,8 +1554,8 @@ const FormWizard = () => {
                                                                         <Form.Label>ROHS Evaluation:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="ROHS_Evaluation_yes">Yes</option>
+                                                                            <option value="ROHS_Evaluation_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1523,8 +1566,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Performance Testing:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Performance_Testing_yes">Yes</option>
+                                                                            <option value="Performance_Testing_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1535,8 +1578,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Intertek Assurance and Consulting:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Intertek_Assurance_and_Consulting_yes">Yes</option>
+                                                                            <option value="Intertek_Assurance_and_Consulting_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1547,8 +1590,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Other:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Other_yes">Yes</option>
+                                                                            <option value="Other_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1559,8 +1602,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Testing at Manufacturer's Premises: </Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Testing_at_Manufacturers_Premises_yes">Yes</option>
+                                                                            <option value="Testing_at_Manufacturers_Premises_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1571,8 +1614,8 @@ const FormWizard = () => {
                                                                         <Form.Label>Witness Manufacturer's Testing:</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Witness_Manufacturers_Testing_yes">Yes</option>
+                                                                            <option value="Witness_Manufacturers_Testing_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
@@ -1583,14 +1626,20 @@ const FormWizard = () => {
                                                                         <Form.Label>Intertek Data Acceptance Program SATELLITE (CTF)</Form.Label>
                                                                         <select className="form-select mb-3 shadow-none">
                                                                             <option defaultValue>Open this select menu</option>
-                                                                            <option value="Yes">Yes</option>
-                                                                            <option value="No">No</option>
+                                                                            <option value="Intertek_Data_Acceptance_Program_SATELLITE_yes">Yes</option>
+                                                                            <option value="Intertek_Data_Acceptance_Program_SATELLITE_no">No</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>
                                                                 <Form.Group className="mb-3 form-group">
                                                                     <Form.Label htmlFor="exampleFormControlTextarea1">Description of revision:</Form.Label>
-                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="5" />
+                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="5"     value={postData.Description_of_revision_1}
+                                                                        onChange={(e) =>
+                                                                            setPostData({
+                                                                                ...postData,
+                                                                                Description_of_revision_1: e.target.value,
+                                                                            })
+                                                                        }/>
                                                                 </Form.Group>
 
 
@@ -1617,7 +1666,9 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Report Numbers to be Revised:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Report_Numbers_to_be_Revised}onChange={(e) =>setPostData({...postData, Report_Numbers_to_be_Revised: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -1627,7 +1678,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>CDR / Listing Report:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.CDR_Listing_Report}onChange={(e) =>setPostData({...postData, CDR_Listing_Report: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -1638,7 +1690,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Testing at Manufacturer's Premises: </Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.CB_Reports}onChange={(e) =>setPostData({...postData, CB_Reports: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -1648,14 +1701,21 @@ const FormWizard = () => {
 
                                                                         <Form.Label>EU Reports:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.EU_Reports}onChange={(e) =>setPostData({...postData, EU_Reports: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
 
                                                                 <Form.Group className="mb-3 form-group">
                                                                     <Form.Label htmlFor="exampleFormControlTextarea1">Description of revision:</Form.Label>
-                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="5" />
+                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="5"     value={postData.Description_of_revision}
+                                                                        onChange={(e) =>
+                                                                            setPostData({
+                                                                                ...postData,
+                                                                                Description_of_revision: e.target.value,
+                                                                            })
+                                                                        }/>
                                                                 </Form.Group>
                                                             </div>
                                                         </div>
@@ -1674,8 +1734,8 @@ const FormWizard = () => {
                                                                     <Form.Label> Australia:		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Australia_yes">Yes</option>
+                                                                        <option value="Australia_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1687,8 +1747,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Brazil_yes">Yes</option>
+                                                                        <option value="Brazil_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1700,8 +1760,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Canada_yes">Yes</option>
+                                                                        <option value="Canada_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1713,8 +1773,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="China_yes">Yes</option>
+                                                                        <option value="China_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1726,8 +1786,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Denmark_yes">Yes</option>
+                                                                        <option value="Denmark_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1739,8 +1799,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="European_Union_yes">Yes</option>
+                                                                        <option value="European_Union_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1752,8 +1812,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Israel_yes">Yes</option>
+                                                                        <option value="Israel_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1765,8 +1825,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Japan_yes">Yes</option>
+                                                                        <option value="Japan_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1778,8 +1838,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Korea_yes">Yes</option>
+                                                                        <option value="Korea_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1791,8 +1851,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Mexico_yes">Yes</option>
+                                                                        <option value="Mexico_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1805,8 +1865,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Saudi_Arabia_yes">Yes</option>
+                                                                        <option value="Saudi_Arabia_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1819,8 +1879,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Singapore_yes">Yes</option>
+                                                                        <option value="Singapore_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1833,8 +1893,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Switzerland_yes">Yes</option>
+                                                                        <option value="Switzerland_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1847,8 +1907,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="United_Kingdom_yes">Yes</option>
+                                                                        <option value="United_Kingdom_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1861,8 +1921,8 @@ const FormWizard = () => {
                                                                     </Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="United_States_yes">Yes</option>
+                                                                        <option value="United_States_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1877,11 +1937,11 @@ const FormWizard = () => {
                                                                     <input
                                                                         type="text"
                                                                         className="form-control"
-                                                                        value={postData.Regulatory_Model_Name}
+                                                                        value={postData.Other_INTENDED_MARKET_COUNTRIES_yes}
                                                                         onChange={(e) =>
                                                                             setPostData({
                                                                                 ...postData,
-                                                                                Regulatory_Model_Name: e.target.value,
+                                                                                Other_INTENDED_MARKET_COUNTRIES_yes: e.target.value,
                                                                             })
                                                                         }
                                                                     />
@@ -1908,7 +1968,15 @@ const FormWizard = () => {
                                                             <div className="row">
                                                                 <Form.Group className="mb-3 form-group">
                                                                     <Form.Label htmlFor="exampleFormControlTextarea1"> DESCRIPTION OF PRODUCT / INTENDED USE</Form.Label>
-                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="5" />
+                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1"
+                                                                     rows="5"
+                                                                     value={postData.SPECIAL_REQUIRMENTS_FOR_FUNCTIONALITLY_TESTING_OF_THE_PRODUCT}
+                                                                        onChange={(e) =>
+                                                                            setPostData({
+                                                                                ...postData,
+                                                                                SPECIAL_REQUIRMENTS_FOR_FUNCTIONALITLY_TESTING_OF_THE_PRODUCT: e.target.value,
+                                                                            })
+                                                                        } />
                                                                 </Form.Group>
 
 
@@ -1931,7 +1999,15 @@ const FormWizard = () => {
                                                             <div className="row">
                                                                 <Form.Group className="mb-3 form-group">
                                                                     <Form.Label htmlFor="exampleFormControlTextarea1"> DESCRIPTION OF PRODUCT / INTENDED USE</Form.Label>
-                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1" rows="5" />
+                                                                    <Form.Control as="textarea" id="exampleFormControlTextarea1"
+                                                                     rows="5"
+                                                                     value={postData.REQUESTED_STANDARDS_FOR_EVALUATION}
+                                                                        onChange={(e) =>
+                                                                            setPostData({
+                                                                                ...postData,
+                                                                                REQUESTED_STANDARDS_FOR_EVALUATION: e.target.value,
+                                                                            })
+                                                                        } />
                                                                 </Form.Group>
 
 
@@ -1950,8 +2026,8 @@ const FormWizard = () => {
                                                                     <Form.Label> Would you like your product evaluated to the first amendment of 60601-1, Third Edition?						:		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Would_you_like_your_product_evaluated_to_the_first_amendment_of_60601_Third_Edition_yes">Yes</option>
+                                                                        <option value="Would_you_like_your_product_evaluated_to_the_first_amendment_of_60601_Third_Edition_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1963,8 +2039,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_software_yes">Yes</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_software_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1976,8 +2052,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Do_you_have_a_risk_management_file_for_your_product_that_is_compliant_with_the_requirements_of_ISO_14971_yes">Yes</option>
+                                                                        <option value="Do_you_have_a_risk_management_file_for_your_product_that_is_compliant_with_the_requirements_of_ISO_14971_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -1991,8 +2067,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Usability_File___Would_you_like_Intertek_to_evaluate_your_Usability_Engineering_File_against_IEC_62366_yes">Yes</option>
+                                                                        <option value="Usability_File___Would_you_like_Intertek_to_evaluate_your_Usability_Engineering_File_against_IEC_62366_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2012,11 +2088,11 @@ const FormWizard = () => {
                                                                     <input
                                                                         type="text"
                                                                         className="form-control"
-                                                                        value={postData.Regulatory_Model_Name}
+                                                                        value={postData.If_Yes_to_above_question_please_provide_Intertek_Project_Number_the_review_was_completed_under_yes}
                                                                         onChange={(e) =>
                                                                             setPostData({
                                                                                 ...postData,
-                                                                                Regulatory_Model_Name: e.target.value,
+                                                                                If_Yes_to_above_question_please_provide_Intertek_Project_Number_the_review_was_completed_under_yes: e.target.value,
                                                                             })
                                                                         }
                                                                     />
@@ -2035,8 +2111,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Has_your_ISO_14971_Risk_Management_Process_been_reviewed_by_Intertek">Yes</option>
+                                                                        <option value="Has_your_ISO_14971_Risk_Management_Process_been_reviewed_by_Intertek">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2052,29 +2128,14 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="If_yes_to_a_usability_file_review_which_standard_would_you_like_Intertek_to_use_yes">Yes</option>
+                                                                        <option value="No">If_yes_to_a_usability_file_review_which_standard_would_you_like_Intertek_to_use_no</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
                                                             <p>Note: IEC 60601-1:2005+A1: 2012, Ed. 3.0 requires compliance with IEC 60601-1-6:2010+A1:2013, Ed. 3.0 which reference compliance to IEC 62366:2007+A1:2014.  IEC 60601-1:2005+A1:2012+A2:202, Ed. 3.0 requires compliacne with IEC 60601-1:2010+A1:2013+A2:2020, Ed. 3.0 which references compliance to IEC 62366-1:2015+A1:2020, Ed. 1.0
                                                             </p>
-                                                            <div className="col-md-3">
-                                                                <div className="form-group">
-
-
-                                                                    <Form.Label>Has your ISO 14971-1 Risk Management Process been reviewed by Intertek?
-
-
-
-                                                                        :		</Form.Label>
-                                                                    <select className="form-select mb-3 shadow-none">
-                                                                        <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
+                                                            
                                                             <div className="col-md-3">
                                                                 <div className="form-group">
 
@@ -2086,8 +2147,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="If_Yes_to_above_question_please_provide_Intertek_Project_Number_the_review_was_completed_under_yes">Yes</option>
+                                                                        <option value="If_Yes_to_above_question_please_provide_Intertek_Project_Number_the_review_was_completed_under_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2102,8 +2163,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Usability_File___Would_you_like_Intertek_to_evaluate_your_Usability_Engineering_File_against_IEC_62366_yes">Yes</option>
+                                                                        <option value="Usability_File___Would_you_like_Intertek_to_evaluate_your_Usability_Engineering_File_against_IEC_62366_yes">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2119,8 +2180,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="If_yes_to_a_usability_file_review_which_standard_would_you_like_Intertek_to_use_yes">Yes</option>
+                                                                        <option value="If_yes_to_a_usability_file_review_which_standard_would_you_like_Intertek_to_use_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2138,8 +2199,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Does_your_product_have_alarms_incorporated_into_the_medical_device_606018_yes">Yes</option>
+                                                                        <option value="Does_your_product_have_alarms_incorporated_into_the_medical_device_606018_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2155,8 +2216,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="If_Yes_for_alarms_what_type_of_alarms_are_provided_yes">Yes</option>
+                                                                        <option value="If_Yes_for_alarms_what_type_of_alarms_are_provided_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2173,8 +2234,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Will_your_product_be_used_in_a_home_health_care_environment_606011_yes">Yes</option>
+                                                                        <option value="Will_your_product_be_used_in_a_home_health_care_environment_606011_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2197,8 +2258,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_a_laser_60825_yes">Yes</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_a_laser_60825_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2215,8 +2276,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_X_Ray_yes">Yes</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_X_Ray_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2234,8 +2295,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Does_your_product_use_batteries_yes">Yes</option>
+                                                                        <option value="Does_your_product_use_batteries_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2253,8 +2314,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="If_yes_what_kind_of_battery_is_used_yes">Yes</option>
+                                                                        <option value="If_yes_what_kind_of_battery_is_used_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2272,8 +2333,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_LEDs_as_luminaires_lamp_IEC_62471_yes">Yes</option>
+                                                                        <option value="Does_your_product_incorporate_the_use_of_LEDs_as_luminaires_lamp_IEC_62471_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2291,8 +2352,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Does_your_product_have_wireless_communication_capabilities_yes">Yes</option>
+                                                                        <option value="Does_your_product_have_wireless_communication_capabilities_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2311,8 +2372,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Will_your_product_be_used_in_a_emergency_medical_services_environment_606012_yes">Yes</option>
+                                                                        <option value="Will_your_product_be_used_in_a_emergency_medical_services_environment_606012_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2335,8 +2396,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Is_the_product_rated_IP_rated_for_protection_against_solid_foreign_objects_yes">Yes</option>
+                                                                        <option value="Is_the_product_rated_IP_rated_for_protection_against_solid_foreign_objects_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2355,8 +2416,8 @@ const FormWizard = () => {
                                                                         :		</Form.Label>
                                                                     <select className="form-select mb-3 shadow-none">
                                                                         <option defaultValue>Open this select menu</option>
-                                                                        <option value="Yes">Yes</option>
-                                                                        <option value="No">No</option>
+                                                                        <option value="Is_the_product_rated_IP_rated_for_protection_against_water_yes">Yes</option>
+                                                                        <option value="Is_the_product_rated_IP_rated_for_protection_against_water_no">No</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -2824,39 +2885,72 @@ const FormWizard = () => {
                                                     <Accordion.Body>
                                                         <div className="form-card text-start">
                                                             <div className="row">
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  ETLCB Scheme Certification Support  Define Applicable Standards:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Electrical Safety Test Plan Preparation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  EMC Test Plan Preparation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Preliminary Design  Construction Review PDR:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Prepare or Review InsulationIsolation Diagram:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Risk Management File Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Software Lifecycle Document Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Usability File Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Accompanying Documents Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Coexistence Risk Assessment  Test Plan:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Cybersecurity Risk Assessment  Test Plan:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Laboratory Findings Report Review  Remediation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  EMC Troubleshooting  Design Review:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA 510k Premarket Notification Regulatory Submission:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA De Novo Program Regulatory Submission:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA Pre-Submission Request for Feedback:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA 513g Request for Classification:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  U MDR Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  EU IVDR Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  UK Medical Device Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  UK IVD Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Global Market Access - Regulatory Requirements Definition:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Global Market Access - Radio Registration:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Global Market Access - Brazil INMETRO Certification:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Medical Device Industry Overview:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Medical Electrical Standards including AIM 7351731:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Risk Management per ISO 14971 2019:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Software Lifecycle  FDA Requirements:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Performance Test Method Development  Validation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Design Verification Support - Plans and Protocols:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Biological Evaluation Plans:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Formative Usability Study:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Summative Usability Study       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  ETLCB Scheme Certification Support  Define Applicable Standards:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Electrical Safety Test Plan Preparation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  EMC Test Plan Preparation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Preliminary Design  Construction Review PDR:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Prepare or Review InsulationIsolation Diagram:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Risk Management File Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Software Lifecycle Document Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Usability File Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Accompanying Documents Review and Checklist Completion:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Coexistence Risk Assessment  Test Plan:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Cybersecurity Risk Assessment  Test Plan:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Laboratory Findings Report Review  Remediation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  EMC Troubleshooting  Design Review:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA 510k Premarket Notification Regulatory Submission:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA De Novo Program Regulatory Submission:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA Pre-Submission Request for Feedback:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  FDA 513g Request for Classification:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  U MDR Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  EU IVDR Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  UK Medical Device Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  UK IVD Technical Documentation Assessment:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Global Market Access - Regulatory Requirements Definition:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Global Market Access - Radio Registration:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Global Market Access - Brazil INMETRO Certification:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Medical Device Industry Overview:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Medical Electrical Standards including AIM 7351731:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Risk Management per ISO 14971 2019:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Training - Software Lifecycle  FDA Requirements:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Performance Test Method Development  Validation:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Design Verification Support - Plans and Protocols:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Biological Evaluation Plans:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Formative Usability Study:       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>  Summative Usability Study       </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
                                                             </div>
 
                                                         </div>
@@ -3350,13 +3444,17 @@ const FormWizard = () => {
                                                         <div className="form-card text-start">
                                                         
                                                          <div className='row'>
-                                                         <div className="col-md-3"><div className="form-group"><Form.Label>Laser  Manufacturer :					</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>			
+                                                         <div className="col-md-3"><div className="form-group"><Form.Label>Laser  Manufacturer :					</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>			
 								
-                                <div className="col-md-3"><div className="form-group"><Form.Label>Model  Number :		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>						
+                                <div className="col-md-3"><div className="form-group"><Form.Label>Model  Number :		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>						
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>Laser  Classification :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                <div className="col-md-3"><div className="form-group"><Form.Label>Laser  Classification :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>FDA  Accession  Number :		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>						
+                                <div className="col-md-3"><div className="form-group"><Form.Label>FDA  Accession  Number :		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>						
                                                        
                                                          </div>
                                                         </div>
@@ -3370,11 +3468,14 @@ const FormWizard = () => {
                                                             <div className="row">
                                                               
 
- <div className="col-md-3"><div className="form-group"><Form.Label>Proposed  Product  Laser  Classification :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+ <div className="col-md-3"><div className="form-group"><Form.Label>Proposed  Product  Laser  Classification :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
 								
-                                <div className="col-md-3"><div className="form-group"><Form.Label>Cooling  Means :				</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>				
+                                <div className="col-md-3"><div className="form-group"><Form.Label>Cooling  Means :				</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>				
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>Gas  Connection :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>	
+                                <div className="col-md-3"><div className="form-group"><Form.Label>Gas  Connection :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>	
 
 
 
@@ -3455,13 +3556,17 @@ const FormWizard = () => {
                         </table>
                      </div>
 
-                     <div className="col-md-3"><div className="form-group"><Form.Label>Wavelength  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                     <div className="col-md-3"><div className="form-group"><Form.Label>Wavelength  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
 								
-                                <div className="col-md-3"><div className="form-group"><Form.Label>Maximum   Power  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                <div className="col-md-3"><div className="form-group"><Form.Label>Maximum   Power  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>Minimum   Power  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                <div className="col-md-3"><div className="form-group"><Form.Label>Minimum   Power  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>Duty   Cycle  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>	
+                                <div className="col-md-3"><div className="form-group"><Form.Label>Duty   Cycle  :	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>	
                                                          </div>
                                                     </Accordion.Body>
                                                 </Accordion.Item>
@@ -3544,17 +3649,23 @@ const FormWizard = () => {
                         </table>
                      </div>
 
-<div className="col-md-3"><div className="form-group"><Form.Label>    Maximum Energy:				</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>				
+<div className="col-md-3"><div className="form-group"><Form.Label>    Maximum Energy:				</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>				
                                                                 
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>   Minimum Energy:			</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>					
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>   Minimum Energy:			</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>					
                                                                                                  
-                                                               <div className="col-md-3"><div className="form-group"><Form.Label>    Repetition Rate:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                                               <div className="col-md-3"><div className="form-group"><Form.Label>    Repetition Rate:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                                                  
                                                                 <div className="col-md-3"><div className="form-group"><Form.Label>   Pulse Width:								
-                                                                                                 </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>   Maximum Power:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>	<p>(If Maximum Energy is Not Known)			</p>		 			
+                                                                                                 </Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>   Maximum Power:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>	<p>(If Maximum Energy is Not Known)			</p>		 			
                                                                                                  
-                                                                <div className="col-md-3"><div className="form-group"><Form.Label>   Duty Cycle:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
+                                                                <div className="col-md-3"><div className="form-group"><Form.Label>   Duty Cycle:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
                                  
                                  
 </div>
@@ -3577,17 +3688,23 @@ const FormWizard = () => {
                                                               
                                                       
                                                             <div className='row'>
-                                                            <div className="col-md-3"><div className="form-group"><Form.Label>         Optical Density for Laser Googles:			</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>					
+                                                            <div className="col-md-3"><div className="form-group"><Form.Label>         Optical Density for Laser Googles:			</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>					
 								
-                                <div className="col-md-3"><div className="form-group"><Form.Label>      Maximum Permissible Exposure Limit:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                <div className="col-md-3"><div className="form-group"><Form.Label>      Maximum Permissible Exposure Limit:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>      Nominal Ocular Hazard Distance:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                <div className="col-md-3"><div className="form-group"><Form.Label>      Nominal Ocular Hazard Distance:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>      Beam Divergence:					</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>			
+                                <div className="col-md-3"><div className="form-group"><Form.Label>      Beam Divergence:					</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>			
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>      Focal Distance:				</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>				
+                                <div className="col-md-3"><div className="form-group"><Form.Label>      Focal Distance:				</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>				
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label>      Recommended Beam Dump:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
+                                <div className="col-md-3"><div className="form-group"><Form.Label>      Recommended Beam Dump:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
                                                             </div>
                                                         </div>
                                                     </Accordion.Body>
@@ -4005,17 +4122,23 @@ const FormWizard = () => {
                                                     <div className="form-card text-start">
                                                             <div className="row">
                                                             
-  <div className="col-md-3"><div className="form-group"><Form.Label> BCF Power:		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>						
+  <div className="col-md-3"><div className="form-group"><Form.Label> BCF Power:		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>						
 								
-                                <div className="col-md-3"><div className="form-group"><Form.Label> Carbon Dioxide:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                <div className="col-md-3"><div className="form-group"><Form.Label> Carbon Dioxide:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label> Dry Power:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>							
+                                <div className="col-md-3"><div className="form-group"><Form.Label> Dry Power:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label> Foam:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>						
+                                <div className="col-md-3"><div className="form-group"><Form.Label> Foam:	</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>						
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label> Nitrogen:</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>								
+                                <div className="col-md-3"><div className="form-group"><Form.Label> Nitrogen:</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>								
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label> Water:		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>
+                                <div className="col-md-3"><div className="form-group"><Form.Label> Water:		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>
                                                             </div>
                                                             </div>
                                                     </Accordion.Body>
@@ -4041,11 +4164,14 @@ const FormWizard = () => {
                                                     <div className="form-card text-start">
                                                             <div className="row">
                                                              
-  <div className="col-md-3"><div className="form-group"><Form.Label> Location INTERTEK USE :		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>						
+  <div className="col-md-3"><div className="form-group"><Form.Label> Location INTERTEK USE :		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>						
 								
-                                <div className="col-md-3"><div className="form-group"><Form.Label> Laser Engineer Level	:</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div> 							
+                                <div className="col-md-3"><div className="form-group"><Form.Label> Laser Engineer Level	:</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div> 							
                                                                
-                                <div className="col-md-3"><div className="form-group"><Form.Label> Engineer	: 		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1" placeholder=" " /> </Form.Group></div></div>					
+                                <div className="col-md-3"><div className="form-group"><Form.Label> Engineer	: 		</Form.Label> <Form.Group className="form-group"> <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+ </Form.Group></div></div>					
                                    
                                                             </div>
                                                             </div>
@@ -4988,7 +5114,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Report Numbers to be Revised:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -4998,7 +5125,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>CDR / Listing Report:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -5008,7 +5136,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Testing at Manufacturer's Premises: </Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -5018,7 +5147,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>EU Reports:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -5874,7 +6004,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Report Numbers to be Revised:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -5884,7 +6015,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>CDR / Listing Report:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -5894,7 +6026,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Testing at Manufacturer's Premises: </Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -5904,7 +6037,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>EU Reports:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -6760,7 +6894,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Report Numbers to be Revised:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -6770,7 +6905,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>CDR / Listing Report:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" placeholder=" " />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -6780,7 +6916,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>Testing at Manufacturer's Premises: </Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
@@ -6790,7 +6927,8 @@ const FormWizard = () => {
 
                                                                         <Form.Label>EU Reports:</Form.Label>
                                                                         <Form.Group className="form-group">
-                                                                            <Form.Control type="text" id="exampleInputText1" />
+                                                                            <Form.Control type="text" id="exampleInputText1"    value={postData.Description_of_revision_1}onChange={(e) =>setPostData({...postData, Description_of_revision_1: e.target.value,})}/>
+
                                                                         </Form.Group>
                                                                     </div>
                                                                 </div>
