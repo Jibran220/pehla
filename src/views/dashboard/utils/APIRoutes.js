@@ -1,4 +1,4 @@
-export const host = "http://localhost:5005";
+export const host = "http://54.37.6.229:5005";
 export const loginRoute = `${host}/api/auth/login`;
 export const registerRoute = `${host}/api/auth/register`;
 export const logoutRoute = `${host}/api/auth/logout`;
